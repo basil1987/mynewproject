@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                ant
+                sh ant
             }
         }
         stage('Deploy') { 
             steps {
-                echo "Hello world" 
+                sh 'echo "Hello world"'
             }
         }
     }
